@@ -25,10 +25,10 @@ object Cache1 {
     }
 
     var objectString: ArrayList<MyDataClass>
-        get() = gsonStringToArray(preferences.getString("obekt2", "[]")!!)
+        get() = gsonStringToArray(preferences.getString("obekt0", "[]")!!)
         set(value) = preferences.edit{
             if (value!=null){
-                it.putString("obekt2", arrayToGsonString(value))
+                it.putString("obekt0", arrayToGsonString(value))
             }
         }
 
